@@ -5,8 +5,8 @@ let modInfo = {
 	pointsName: "points",
 	modFiles: ["layers.js", "tree.js"],
 
-	discordName: "",
-	discordLink: "",
+	discordName: "Upgrade Infomation",
+	discordLink: "upg.html",
 	initialStartPoints: new Decimal (10), // Used for hard resets and new players
 	offlineLimit: 6,  // In hours
 }
@@ -34,7 +34,7 @@ function getStartPoints(){
 
 // Determines if it should show points/sec
 function canGenPoints(){
-	return hasUpgrade('P', 11)
+	return hasUpgrade('p', 11)
 }
 
 // Calculate points/sec!
